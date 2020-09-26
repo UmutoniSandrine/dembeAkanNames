@@ -1,7 +1,7 @@
 var CC, YY, MM, DD, d, dayValue;
 var dayNames = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
-var namesOfFemales = ["Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame", "Kwasi"];
-var namesOfMales = ["Adwoa", "Abenaa", "Akua", " Yaa", "Afua", "Ama", "Akosua"];
+var maleNames= ["Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame", "Kwasi"];
+var femaleNames = ["Adwoa", "Abenaa", "Akua", " Yaa", "Afua", "Ama", "Akosua"];
 
 function validate() {
     var genders = document.getElementsByName("gender");
@@ -54,52 +54,52 @@ function byGender() {
     switch (gender) {
         case "male":
             if (dayValue == 1) {
-                alert("Born on : " + dayNames[0] + " Goes with this Akan name: " + namesOfMales[0]);
+                alert("Born on : " + dayNames[0] + " Goes with this Akan name: " + maleNames[0]);
             }
             else if (dayValue == 2) {
-                alert("Born on : " + dayNames[1] + " Goes with this Akan name: " + namesOfMales[1]);
+                alert("Born on : " + dayNames[1] + " Goes with this Akan name: " + maleNames[1]);
             } else if (dayValue == 3) {
-                alert("Born on : " + dayNames[2] + " Goes with this Akan name: " + namesOfMales[2]);
+                alert("Born on : " + dayNames[2] + " Goes with this Akan name: " + maleNames[2]);
 
             }
             if (dayValue == 4) {
-                alert("Born on : " + dayNames[3] + " Goes with this Akan name: " + namesOfMales[3]);
+                alert("Born on : " + dayNames[3] + " Goes with this Akan name: " + maleNames[3]);
             }
             else if (dayValue == 5) {
-                alert("Born on : " + dayNames[4] + " Goes with this Akan name: " + namesOfMales[4]);
+                alert("Born on : " + dayNames[4] + " Goes with this Akan name: " + maleNames[4]);
             } else if (dayValue == 6) {
-                alert("Born on : " + dayNames[5] + " Goes with this Akan name: " + namesOfMales[5]);
+                alert("Born on : " + dayNames[5] + " Goes with this Akan name: " + maleNames[5]);
 
             }
             else if (dayValue == -0) {
-                alert("Born on : " + dayNames[5] + " Goes with this Akan name: " + namesOfMales[6]);
+                alert("Born on : " + dayNames[5] + " Goes with this Akan name: " + maleNames[6]);
                 break;
 
             }
         case "female":
             if (dayValue == 1) {
-                alert("Born on : " + dayNames[0] + " Goes with this Akan name: " + feamesOfMales[0]);
+                alert("Born on : " + dayNames[0] + " Goes with this Akan name: " + femaleNames[0]);
             }
             else if (dayValue == 2) {
-                alert("Born on : " + dayNames[1] + " Goes with this Akan name: " + feamesOfMales[1]);
+                alert("Born on : " + dayNames[1] + " Goes with this Akan name: " + femaleNames[1]);
 
             }
             else if (dayvalue == 3) {
-                alert("Born on : " + dayNames[2] + " Goes with this Akan name: " + feamesOfMales[2]);
+                alert("Born on : " + dayNames[2] + " Goes with this Akan name: " + femaleNames[2]);
             }
             else if (dayValue == 4) {
-                alert("Born on : " + dayNames[3] + " Goes with this Akan name: " + feamesOfMales[3]);
+                alert("Born on : " + dayNames[3] + " Goes with this Akan name: " + femaleNames[3]);
 
             }
             else if (dayValue == 5) {
-                alert("Born on : " + dayNames[4] + " Goes with this Akan name: " + feamesOfMales[4]);
+                alert("Born on : " + dayNames[4] + " Goes with this Akan name: " + femaleNames[4]);
             }
             else if (dayValue == 6) {
-                alert("Born on : " + dayNames[5] + " Goes with this Akan name: " + feamesOfMales[5]);
+                alert("Born on : " + dayNames[5] + " Goes with this Akan name: " + femaleNames[5]);
 
             }
             else if (dayValue == -0) {
-                alert("Born on : " + dayNames[6] + " Goes with this Akan name: " + feamesOfMales[6]);
+                alert("Born on : " + dayNames[6] + " Goes with this Akan name: " + femaleNames[6]);
             }
             break;
         default:
