@@ -29,3 +29,9 @@ h4{
 label{
     color:bisque;
 }
+#choose{
+    color:bisque;
+    text-shadow: 2px 2px 5px #4d0000;
+    margin-bottom: 10px;
+
+}
