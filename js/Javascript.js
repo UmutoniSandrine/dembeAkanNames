@@ -1,4 +1,4 @@
-var CC, YY, MM, DD, weekDays, dayValue;
+var CC, YY, MM, DD, d, dayValue;
 var namesOfDays = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
 var namesOfFemales = ["Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame", "Kwasi"];
 var namesOfMales = ["Adwoa", "Abenaa", "Akua", " Yaa", "Afua", "Ama", "Akosua"];
@@ -37,9 +37,9 @@ function findDayvalue() {
     YY = parseInt(year.subString(2, 4));
     MM = parseInt(document.getElementById("month").value);
     DD = parseInt(document.getElementById("date").value);
-    weekDays = (((CC / 4) - 2 * CC - 1) + ((5 * YY / 4)) + ((26 * (MM + 1) / 10)) + DD) % 7;
-    console.log(weekDays);
-    return (Math.floor(weekDays));
+    d = (((CC / 4) - 2 * CC - 1) + ((5 * YY / 4)) + ((26 * (MM + 1) / 10)) + DD) % 7;
+    console.log(d);
+    return (Math.floor(d));
 }
 function byGender() {
     var genders = document.getElementsByName("gender");
