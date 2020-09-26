@@ -5,9 +5,8 @@ var namesOfMales = ["Adwoa", "Abenaa", "Akua", " Yaa", "Afua", "Ama", "Akosua"];
 
 function validate() {
     var genders = document.getElementsByName("gender");
-    if (document.form.year.value == "" || document.form.year.value.length != 4 || document.form.year.value > 2021
-        || document.form.year.value > 1940) {
-        alert("please put year of birth");
+    if (document.form.year.value == "" || document.form.year.value.length != 4 || document.form.year.value > 2021|| document.form.year.value <= 1940) {
+        alert("Please Enter The Year of Birth");
         document.form.year.focus();
         return false;
     }
@@ -111,7 +110,7 @@ function byGender() {
     }
 
 }
-function getName(){
+function getName() {
     dayVal = findDayvalue();
     byGender();
 }
