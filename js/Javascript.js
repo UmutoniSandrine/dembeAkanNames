@@ -43,28 +43,43 @@ function findDayvalue() {
     console.log(weekDays);
     return (Math.floor(weekDays));
 }
-function byGender(){
-    var genders  = document.getElementsByName("gender");
-    if(gender[0].checked == true){
-        var gender ="male";
-    }else if(genders[1].checked ==  true){
-        var gender ="female";
-    }else {
+function byGender() {
+    var genders = document.getElementsByName("gender");
+    if (gender[0].checked == true) {
+        var gender = "male";
+    } else if (genders[1].checked == true) {
+        var gender = "female";
+    } else {
         return false;
 
     }
-    switch(gender){
+    switch (gender) {
         case "male":
-            if(dayVal == 1){
+            if (dayVal == 1) {
                 alert("Born on : " + namesOfDays[0] + " Goes with this Akan name: " + namesOfMales[0]);
             }
-            else if(dayVal == 2){
-                alert("Born on : " + namesOfDays[1] + " Goes with this Akan name: " +namesOfMales[1]);
-            }else if(dayVal == 3){
-                alert("Born on : " + namesOfDays[2] + " Goes with this Akan name: " +namesOfMales[2]);
+            else if (dayVal == 2) {
+                alert("Born on : " + namesOfDays[1] + " Goes with this Akan name: " + namesOfMales[1]);
+            } else if (dayVal == 3) {
+                alert("Born on : " + namesOfDays[2] + " Goes with this Akan name: " + namesOfMales[2]);
+
+            }
+            if (dayVal == 4) {
+                alert("Born on : " + namesOfDays[3] + " Goes with this Akan name: " + namesOfMales[3]);
+            }
+            else if (dayVal == 5) {
+                alert("Born on : " + namesOfDays[4] + " Goes with this Akan name: " + namesOfMales[4]);
+            } else if (dayVal == 6) {
+                alert("Born on : " + namesOfDays[5] + " Goes with this Akan name: " + namesOfMales[5]);
+
+            }
+            else if (dayVal == -0) {
+                alert("Born on : " + namesOfDays[5] + " Goes with this Akan name: " + namesOfMales[6]);
+                break;
 
             }
 
+
     }
-   
+
 }
