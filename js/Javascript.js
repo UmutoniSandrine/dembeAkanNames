@@ -32,7 +32,7 @@ function validate() {
   
 }
 
-function calculateDayValue(){
+function findDayValue(){
   year = document.getElementById("year").value;
   CC = parseInt(year.substring(0,2));
   YY = parseInt(year.substring(2,4));
@@ -105,6 +105,6 @@ function getGender(){
   }
 }
 function getName(){
-  dayValue = calculateDayValue();
+  dayValue = findDayValue();
   getGender();
 }
