@@ -15,3 +15,10 @@ h1,h2 {
     font-weight: bold;
     
   }
+  .div2{
+    background-color:#330000;
+    margin-left: 25%;
+    margin-right: 16%;
+    opacity: 0.8;
+    border-radius: 15px;
+}
