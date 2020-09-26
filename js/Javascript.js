@@ -53,5 +53,18 @@ function byGender(){
         return false;
 
     }
+    switch(gender){
+        case "male":
+            if(dayVal == 1){
+                alert("Born on : " + namesOfDays[0] + " Goes with this Akan name: " + namesOfMales[0]);
+            }
+            else if(dayVal == 2){
+                alert("Born on : " + namesOfDays[1] + " Goes with this Akan name: " +namesOfMales[1]);
+            }else if(dayVal == 3){
+                alert("Born on : " + namesOfDays[2] + " Goes with this Akan name: " +namesOfMales[2]);
+
+            }
+
+    }
    
 }
