@@ -24,11 +24,20 @@ function validate() {
         document.form.day.focus();
         return false;
     }
-    else if(genders[0].checked == false && genders[1]== false){
+    else if (genders[0].checked == false && genders[1] == false) {
         alert("select female or male in order to continue");
         return false;
-    }else{
+    } else {
         return true;
     }
 
+
+}
+function findDayvalue() {
+    year = document.getElementById("year").value;
+    CC = parseInt(year.subString(0, 2));
+    YY = parseInt(year.subString(2, 4));
+    MM = parseInt(document.getElementById("month").value);
+    DD = parseInt(document.getElementById("date").value);
+    weekDays = (((CC / 4) - 2 * CC - 1) + ((5 * YY / 4)) + ((26 * (MM + 1) / 10)) + DD) % 7;
 }
