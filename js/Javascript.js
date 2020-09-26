@@ -111,3 +111,7 @@ function byGender() {
     }
 
 }
+function getName(){
+    dayVal = findDayvalue();
+    byGender();
+}
