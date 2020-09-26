@@ -86,6 +86,13 @@ function byGender() {
                 alert("Born on : " + namesOfDays[1] + " Goes with this Akan name: " + feamesOfMales[1]);
                 
             }
+            else if(dayval == 3) {
+                alert("Born on : " + namesOfDays[2] + " Goes with this Akan name: " + feamesOfMales[2]);
+            }
+            else if(dayVal == 4){
+                alert("Born on : " + namesOfDays[3] + " Goes with this Akan name: " + feamesOfMales[3]);
+
+            }
 
 
 
