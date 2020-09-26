@@ -5,7 +5,7 @@ var femaleNames = ["Akosua", "Adwoa", "Abenaa", "Akua", " Yaa", "Afua", "Ama"];
 
 function validate() {
     var genders = document.getElementsByName("gender");
-    if (document.form.year.value == "" || document.form.year.value.length != 4 || document.form.year.value > 2021 || document.form.year.value <= 1940) {
+    if (document.form.year.value == "" || document.form.year.value.length != 4 || document.form.year.value > 2021|| document.form.year.value <= 1940) {
         alert("Please Enter The Year of Birth");
         document.form.year.focus();
         return false;
@@ -38,7 +38,7 @@ function findDayValue() {
     YY = parseInt(year.substring(2, 4));
     MM = parseInt(document.getElementById("month").value);
     DD = parseInt(document.getElementById("date").value);
-    d = (((CC / 4) - 2 * CC - 1) + ((5 * YY / 4)) + ((26 * (MM + 1) / 10)) + DD) % 7; z
+    d = (((CC / 4) - 2 * CC - 1) + ((5 * YY / 4)) + ((26 * (MM + 1) / 10)) + DD) % 7;z
     console.log(d);
     return (Math.floor(d));
 }
@@ -57,7 +57,7 @@ function byGender() {
     switch (gender) {
         case "male":
             if (dayValue == 1) {
-                alert("Born on " + dayNames[0] + " Goes with this akan name:" + maleNames[0]);
+                alert("Born on " + dayNames[0] + " Goes with this akan name:" + maleNames[0] );
             }
             else if (dayValue == 2) {
                 alert("Born on " + dayNames[1] + " Goes with this akan name: " + maleNames[1]);
@@ -75,7 +75,7 @@ function byGender() {
                 alert("Born on " + dayNames[5] + " Goes with this akan name: " + maleNames[5]);
             }
             else if (dayValue == -0) {
-                alert("Born on " + dayNames[6] + " Goes with this akan name:" + maleNames[6]);
+                alert("Born on " + dayNames[6] + " Goes with this akan name:" + maleNames[6] );
             }
             break;
         case "female":
