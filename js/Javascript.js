@@ -1,11 +1,11 @@
 var CC, YY, MM, DD, d, dayValue;
-var dayNames = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
-var maleNames= ["Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame", "Kwasi"];
-var femaleNames = ["Adwoa", "Abenaa", "Akua", " Yaa", "Afua", "Ama", "Akosua"];
+var dayNames = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+var maleNames = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
+var femaleNames = ["Akosua", "Adwoa", "Abenaa", "Akua", " Yaa", "Afua", "Ama"];
 
 function validate() {
     var genders = document.getElementsByName("gender");
-    if (document.form.year.value == "" || document.form.year.value.length != 4 || document.form.year.value > 2021 || document.form.year.value <= 1940) {
+    if (document.form.year.value == "" || document.form.year.value.length != 4 || document.form.year.value > 2021|| document.form.year.value <= 1940) {
         alert("Please Enter The Year of Birth");
         document.form.year.focus();
         return false;
@@ -22,15 +22,16 @@ function validate() {
         document.form.day.focus();
         return false;
     }
-    else if (genders[0].checked == false && genders[1] == false) {
-        alert("select female or male in order to continue");
+    else if (genders[0].checked == false && genders[1].checked == false) {
+        alert("You must select male or female");
         return false;
-    } else {
+    }
+    else {
         return true;
     }
 
-
 }
+
 function findDayvalue() {
     year = document.getElementById("year").value;
     CC = parseInt(year.subString(0, 2));
