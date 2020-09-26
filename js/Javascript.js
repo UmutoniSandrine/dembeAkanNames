@@ -47,5 +47,11 @@ function byGender(){
     var genders  = document.getElementsByName("gender");
     if(gender[0].checked == true){
         var gender ="male";
-    }else if()
+    }else if(genders[1].checked ==  true){
+        var gender ="female";
+    }else {
+        return false;
+
+    }
+   
 }
