@@ -79,6 +79,13 @@ function byGender() {
 
             }
         case "female":
+            if(dayVal == 1){
+                alert("Born on : " + namesOfDays[0] + " Goes with this Akan name: " + feamesOfMales[0]);
+            }
+            else if(dayVal == 2) {
+                alert("Born on : " + namesOfDays[1] + " Goes with this Akan name: " + feamesOfMales[1]);
+                
+            }
 
 
 
