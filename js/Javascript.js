@@ -78,6 +78,8 @@ function byGender() {
                 break;
 
             }
+        case "female":
+
 
 
     }
