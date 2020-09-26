@@ -79,19 +79,29 @@ function byGender() {
 
             }
         case "female":
-            if(dayVal == 1){
+            if (dayVal == 1) {
                 alert("Born on : " + namesOfDays[0] + " Goes with this Akan name: " + feamesOfMales[0]);
             }
-            else if(dayVal == 2) {
+            else if (dayVal == 2) {
                 alert("Born on : " + namesOfDays[1] + " Goes with this Akan name: " + feamesOfMales[1]);
-                
+
             }
-            else if(dayval == 3) {
+            else if (dayval == 3) {
                 alert("Born on : " + namesOfDays[2] + " Goes with this Akan name: " + feamesOfMales[2]);
             }
-            else if(dayVal == 4){
+            else if (dayVal == 4) {
                 alert("Born on : " + namesOfDays[3] + " Goes with this Akan name: " + feamesOfMales[3]);
 
+            }
+            else if (dayVal == 5) {
+                alert("Born on : " + namesOfDays[4] + " Goes with this Akan name: " + feamesOfMales[4]);
+            }
+            else if (dayVal == 6) {
+                alert("Born on : " + namesOfDays[5] + " Goes with this Akan name: " + feamesOfMales[5]);
+
+            }
+            else if (dayVal == -0) {
+                alert("Born on : " + namesOfDays[6] + " Goes with this Akan name: " + feamesOfMales[6]);
             }
 
 
