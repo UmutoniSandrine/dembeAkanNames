@@ -103,6 +103,8 @@ function byGender() {
             else if (dayVal == -0) {
                 alert("Born on : " + namesOfDays[6] + " Goes with this Akan name: " + feamesOfMales[6]);
             }
+            break;
+        default:
 
 
 
