@@ -44,5 +44,8 @@ function findDayvalue() {
     return (Math.floor(weekDays));
 }
 function byGender(){
-    var genders  = 
+    var genders  = document.getElementsByName("gender");
+    if(gender[0].checked == true){
+        var gender ="male";
+    }else if()
 }
