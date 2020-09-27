@@ -4,11 +4,16 @@ This project was about using the knowledge that we acquired during the past week
 ------------------------------------------------------------------------------------------------------------------------
 Author My names is Umutoni Sandrine a student at university.
 ------------------------------------------------------------------------------------------------------------------------
+set up and Installation requirements:
 
-Requirement Used
+cloning this repository 60 times while changing th code on visual studio code
+open web browser of choice *inorder to alter or add any piece of code use visual code studio or atom depends on your prefernce
+-------------------------------------------------------------------------------------------------------------------
+
+Technology Used:
     • Bootstrap
-    • .HTML,CSS and JavaScript
-------------------------------------------------------------------------------------------------------------------------
+    • HTML,CSS and JavaScript
+----------------------------------------------------------------------------------------------------------------
       
 BDD
 
@@ -21,5 +26,4 @@ umutonisandrine250@gmail.com
 -----------------------------------------------------------------------------------------------------------------------
 this application is under bachelor AUCA 
 copyright(c) (2020) Umutoni Sandrine
-
 
